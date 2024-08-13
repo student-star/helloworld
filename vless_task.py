@@ -18,7 +18,7 @@ def execute_remote_command():
 
     try:
         ssh.connect(hostname, port, username, password)
-        command = f"cd ~/domains/{username}.serv00.net/vless && ./check_vless.sh"
+        command = "cd ~/domains/xingyuyuehua.serv00.net/vless &&  export PATH=$PATH:/home/xingyuyuehua/.npm-global/bin && ./check_vless.sh"
         stdin, stdout, stderr = ssh.exec_command(command)
         print("STDOUT:")
         print(stdout.read().decode())
