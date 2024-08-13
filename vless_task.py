@@ -4,7 +4,7 @@ import os
 # Function to execute the remote command
 def execute_remote_command():
     hostname = "s8.serv00.com"
-    port = 60710  # Updated SSH port
+    port = 22  # Updated SSH port
     username = os.getenv("VPS_USERNAME")
     password = os.getenv("VPS_PASSWORD")
 
